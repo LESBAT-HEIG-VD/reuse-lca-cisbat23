@@ -1,7 +1,7 @@
 # reuse-lca-cisbat23
 Supplementary information about LCA data used in the CISBAT 2023 paper
 
-Visit this link : https://lesbat-heig-vd.github.io/reuse-lca-cisbat23/
+Visit this webpage : https://lesbat-heig-vd.github.io/reuse-lca-cisbat23/
 
 or
 
