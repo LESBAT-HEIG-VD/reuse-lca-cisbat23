@@ -39,7 +39,7 @@
 
 <section class="description">
       <div style="text-align: center">
-        <img src=.\pictures\Faraday-photo.jpg height=300px alt="Building Photo">
+        <img src=pictures\Faraday-photo.jpg height=300px alt="Building Photo">
       </div>
       <div class="card">
           <div class="card-content">
@@ -105,7 +105,7 @@
           <div class="card-content">
               <h2>Reuse strategy</h2>
               <div>
-                  <p style="text-align:center;"><img src=.\pictures\Faraday-map.png alt="Reuse map" width=800px></p>
+                  <p style="text-align:center;"><img src=pictures\Faraday-map.png alt="Reuse map" width=800px></p>
               </div>
               <div class="table-container">
                 <table id="myTable" class="display">
@@ -766,11 +766,11 @@
           <div class="card-content">
               <h2>Material mass analysis</h2>
                   <div>
-                      <button id="button_mat_component" onclick="loadMatSunburst('.\\html_figures\\Faraday_material_sunburst.html'); setActiveButtons('button_mat_component', '#button_mat_component, #button_mat_ebkp')">Building components</button>
-                      <button id="button_mat_ebkp" onclick="loadMatSunburst('.\\html_figures\\Faraday_material_sunburst_ebkp.html'); setActiveButtons('button_mat_ebkp', '#button_mat_component, #button_mat_ebkp')">e-BKP categories</button>
+                      <button id="button_mat_component" onclick="loadMatSunburst('\html_figures\\Faraday_material_sunburst.html'); setActiveButtons('button_mat_component', '#button_mat_component, #button_mat_ebkp')">Building components</button>
+                      <button id="button_mat_ebkp" onclick="loadMatSunburst('\html_figures\\Faraday_material_sunburst_ebkp.html'); setActiveButtons('button_mat_ebkp', '#button_mat_component, #button_mat_ebkp')">e-BKP categories</button>
                   </div>
                   <div>
-                      <iframe id="material_sunburst"  src=.\\html_figures\\Faraday_material_sunburst.html style="width: 100%; height: 700px; border: 0">  </iframe>
+                      <iframe id="material_sunburst"  src=\html_figures\\Faraday_material_sunburst.html style="width: 100%; height: 700px; border: 0">  </iframe>
                   </div>
           </div>
       </div>
@@ -780,8 +780,8 @@
           <div class="card-content">
               <h2>Building LCA impacts</h2>
               <div>
-                  <button id="button_1_ad" onclick="loadBuildingImpTable('.\\html_figures\\Faraday_impacts_table.html'); setActiveButtons('button_1_ad', '#button_1_ad, #button_1_nv')">Actual design</button>
-                  <button id="button_1_nv" onclick="loadBuildingImpTable('.\\html_figures\\Faraday_impacts_table_new.html'); setActiveButtons('button_1_nv', '#button_1_ad, #button_1_nv')">"Only new" variant</button>
+                  <button id="button_1_ad" onclick="loadBuildingImpTable('\html_figures\\Faraday_impacts_table.html'); setActiveButtons('button_1_ad', '#button_1_ad, #button_1_nv')">Actual design</button>
+                  <button id="button_1_nv" onclick="loadBuildingImpTable('\html_figures\\Faraday_impacts_table_new.html'); setActiveButtons('button_1_nv', '#button_1_ad, #button_1_nv')">"Only new" variant</button>
               </div>
               <div>
                   <iframe id="building-lca" style="width: 1000px; height: 300px; border: 0">  </iframe>
@@ -794,9 +794,9 @@
           <div class="card-content">
               <h2>LCA of reused components</h2>
               <div>
-                  <button id="button_comparison_gwp" onclick="loadBarCompar('.\\html_figures\\Faraday_GWP__reused_comp_bar.html'); setActiveButtons('button_comparison_gwp','#button_comparison_gwp, #button_comparison_ubp, #button_comparison_penr')">GHG emissions</button>
-                  <button id="button_comparison_ubp" onclick="loadBarCompar('.\\html_figures\\Faraday_UBP__reused_comp_bar.html'); setActiveButtons('button_comparison_ubp','#button_comparison_gwp, #button_comparison_ubp, #button_comparison_penr')">Ecological scarcity</button>
-                  <button id="button_comparison_penr" onclick="loadBarCompar('.\\html_figures\\Faraday_PE-NR__reused_comp_bar.html'); setActiveButtons('button_comparison_penr','#button_comparison_gwp, #button_comparison_ubp, #button_comparison_penr')">Primary energy, non-renewable</button>
+                  <button id="button_comparison_gwp" onclick="loadBarCompar('\html_figures\\Faraday_GWP__reused_comp_bar.html'); setActiveButtons('button_comparison_gwp','#button_comparison_gwp, #button_comparison_ubp, #button_comparison_penr')">GHG emissions</button>
+                  <button id="button_comparison_ubp" onclick="loadBarCompar('\html_figures\\Faraday_UBP__reused_comp_bar.html'); setActiveButtons('button_comparison_ubp','#button_comparison_gwp, #button_comparison_ubp, #button_comparison_penr')">Ecological scarcity</button>
+                  <button id="button_comparison_penr" onclick="loadBarCompar('\html_figures\\Faraday_PE-NR__reused_comp_bar.html'); setActiveButtons('button_comparison_penr','#button_comparison_gwp, #button_comparison_ubp, #button_comparison_penr')">Primary energy, non-renewable</button>
               </div>
               <div>
                   <iframe id="bar_comparison" width="100%" style="width: 100%; height: 600px; border: 0">  </iframe>
@@ -864,11 +864,11 @@
 
       // Load the default page when the page first loads
       window.onload = function() {
-        loadBuildingImpTable('.\\html_figures\\Faraday_impacts_table.html');
+        loadBuildingImpTable('\html_figures\\Faraday_impacts_table.html');
         setActiveButtons("button_1_ad", "#button_1_ad, #button_1_nv");
-        loadMatSunburst('.\\html_figures\\Faraday_material_sunburst.html');
+        loadMatSunburst('\html_figures\\Faraday_material_sunburst.html');
         setActiveButtons('button_mat_component', '#button_mat_component, #button_mat_ebkp');
-        loadBarCompar('.\\html_figures\\Faraday_GWP__reused_comp_bar.html');
+        loadBarCompar('\html_figures\\Faraday_GWP__reused_comp_bar.html');
         setActiveButtons('button_comparison_gwp', '#button_comparison_gwp, #button_comparison_ubp, #button_comparison_penr')
       }
 
