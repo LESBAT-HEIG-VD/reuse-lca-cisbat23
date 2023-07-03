@@ -1,0 +1,38 @@
+ <script>
+    $(document).ready(function() {
+      // Create the DataTable
+      var table = $('#myTable').DataTable();
+
+      // Add download buttons
+      new $.fn.dataTable.Buttons(table, {
+        buttons: [
+          { extend: 'excel', text: 'Download Excel' },
+          { extend: 'csv', text: 'Download CSV' }
+        ]
+      }).container().appendTo($('#myTable_wrapper .col-md-6:eq(0)'));
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+      var dataTable = $('#myDataTable').DataTable({
+        // DataTables configuration options
+      });
+
+      // Add column visibility control
+      $('#myDataTable').DataTable().columns().every(function() {
+        var column = this;
+
+        // Create checkbox for each column
+        var columnCheckbox = $('<input type="checkbox" checked />')
+          .attr('data-column-index', column.index())
+          .attr('data-column-name', column.header().textContent)
+          .on('change', function() {
+            var columnIndex = $(this).data('column-index');
+            dataTable.column(columnIndex).visible($(this).is(':checked'));
+          });
+
+        // Append checkbox to a container
+        $('#columnVisibilityControls').append(columnCheckbox).append(column.header().textContent);
+      });
+    });
+  </script>
