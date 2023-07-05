@@ -322,3 +322,8 @@ div.dataTables_wrapper table.dataTable {
       z-index: 9999;
     }
 
+.github-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
