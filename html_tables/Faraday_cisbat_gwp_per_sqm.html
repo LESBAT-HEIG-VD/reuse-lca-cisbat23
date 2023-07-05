@@ -13,11 +13,12 @@
   <thead>
     <tr style="text-align: right;">
       <th>n°</th>
-      <th>Element</th>
-      <th>Category</th>
-      <th>Origin</th>
+      <th>Product</th>
+      <th>Building category</th>
+      <th>Source</th>
       <th>Age</th>
       <th>Service lifespan extension</th>
+      <th>no. pieces</th>
       <th>Area (m²)</th>
       <th>Volume (m3)</th>
       <th>Mass used (kg)</th>
@@ -30,14 +31,14 @@
       <th>Modification</th>
       <th>Transport A2</th>
       <th>Transport A4</th>
-      <th>GWP: Losses</th>
-      <th>GWP: Dismantling</th>
-      <th>GWP: Storage</th>
-      <th>GWP: Modification</th>
-      <th>GWP: Transport A2</th>
-      <th>GWP: Transport A4</th>
-      <th>GWP: Total A1-A4</th>
-      <th>GWP: Conventional equivalent A1-A4</th>
+      <th>GWP: Dismantling (A1)</th>
+      <th>GWP: Storage (A3)</th>
+      <th>GWP: Modification (A3)</th>
+      <th>GWP: Losses (A3)</th>
+      <th>GWP: Transport (A2)</th>
+      <th>GWP: Transport (A4)</th>
+      <th>GWP: Total reuse (A1-A4)</th>
+      <th>GWP: Conventional equivalent (A1-A4)</th>
       <th>GWP: Avoided, production</th>
       <th>GWP: Avoided, waste treatment</th>
       <th>GWP: Avoided, total</th>
@@ -52,6 +53,7 @@
       <td>Ex-situ dismantling (building)</td>
       <td>30</td>
       <td><span style="color: #ffe234;" class="data-rating-dot"><b>&bull;</b></span>60</td>
+      <td>-</td>
       <td>150</td>
       <td>2.25</td>
       <td>13500</td>
@@ -64,10 +66,10 @@
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>No modification</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>11 km, <span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>Camion 16-32 t</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>11 km, <span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>Camion 7.5-16 t</td>
-      <td>0.012</td>
       <td>0.139</td>
       <td>0.0035</td>
       <td>0</td>
+      <td>0.012</td>
       <td>0.044</td>
       <td>0.047</td>
       <td>0.244</td>
@@ -84,6 +86,7 @@
       <td>Ex-situ construction surplus</td>
       <td>0</td>
       <td><span style="color: #ffe234;" class="data-rating-dot"><b>&bull;</b></span>40</td>
+      <td>-</td>
       <td>680</td>
       <td>5.51</td>
       <td>7893</td>
@@ -96,10 +99,10 @@
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>No modification</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>87 km, <span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>Camion 16-32 t</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>129 km, <span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>Camion 7.5-16 t</td>
-      <td>1.32</td>
       <td>0</td>
       <td>0.016</td>
       <td>0</td>
+      <td>1.32</td>
       <td>0.193</td>
       <td>0.326</td>
       <td>1.85</td>
@@ -116,6 +119,7 @@
       <td>Ex-situ construction surplus</td>
       <td>0</td>
       <td><span style="color: #ffe234;" class="data-rating-dot"><b>&bull;</b></span>30</td>
+      <td>-</td>
       <td>194</td>
       <td>2.90</td>
       <td>1742</td>
@@ -128,10 +132,10 @@
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>No modification</td>
       <td><span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>50 km, <span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>Camion 16-32 t</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>2 km, <span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>Camion 16-32 t</td>
-      <td>0.012</td>
       <td>0.0007</td>
       <td>0.0082</td>
       <td>0</td>
+      <td>0.012</td>
       <td>0.023</td>
       <td>0.0009</td>
       <td>0.046</td>
@@ -148,6 +152,7 @@
       <td>Ex-situ construction surplus</td>
       <td>0</td>
       <td><span style="color: #ffe234;" class="data-rating-dot"><b>&bull;</b></span>30</td>
+      <td>-</td>
       <td>186</td>
       <td>3.53</td>
       <td>2416</td>
@@ -160,9 +165,9 @@
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>No modification</td>
       <td><span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>50 km, <span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>Camion 16-32 t</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>2 km, <span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>Camion 16-32 t</td>
-      <td>0</td>
       <td>0.0006</td>
       <td>0.010</td>
+      <td>0</td>
       <td>0</td>
       <td>0.031</td>
       <td>0.0012</td>
@@ -180,6 +185,7 @@
       <td>Ex-situ construction surplus</td>
       <td>2</td>
       <td><span style="color: #ffe234;" class="data-rating-dot"><b>&bull;</b></span>30</td>
+      <td>-</td>
       <td>100</td>
       <td>0.500</td>
       <td>1800</td>
@@ -192,10 +198,10 @@
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>No modification</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>102 km, <span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>Camion 7.5-16 t</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>5 km, <span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>Camion 7.5-16 t</td>
-      <td>0.064</td>
       <td>0</td>
       <td>0.0006</td>
       <td>0</td>
+      <td>0.064</td>
       <td>0.065</td>
       <td>0.0029</td>
       <td>0.133</td>
@@ -212,6 +218,7 @@
       <td>Ex-situ dismantling (building)</td>
       <td>97</td>
       <td><span style="color: #ffe234;" class="data-rating-dot"><b>&bull;</b></span>30</td>
+      <td>2</td>
       <td>2.40</td>
       <td>0.288</td>
       <td>60.0</td>
@@ -224,10 +231,10 @@
       <td><span style="color: #ff4545;" class="data-rating-dot"><b>&bull;</b></span>Grinding, painting, assembling of handles and locks</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>14 km, <span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>Camion 16-32 t</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>2 km, <span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>Véhicule de transport, jusqu'à 3.5 t</td>
-      <td>0.0020</td>
       <td>0</td>
       <td>0.0023</td>
       <td>0</td>
+      <td>0.0020</td>
       <td>0.0002</td>
       <td>0.0003</td>
       <td>0.0049</td>
@@ -244,6 +251,7 @@
       <td>Ex-situ dismantling (building)</td>
       <td>98</td>
       <td><span style="color: #ffe234;" class="data-rating-dot"><b>&bull;</b></span>30</td>
+      <td>3</td>
       <td>3.60</td>
       <td>0.432</td>
       <td>90.0</td>
@@ -257,8 +265,8 @@
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>8 km, <span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>Camion 16-32 t</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>13 km, <span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>Véhicule de transport, jusqu'à 3.5 t</td>
       <td>0</td>
-      <td>0</td>
       <td>0.0035</td>
+      <td>0</td>
       <td>0</td>
       <td>0.0002</td>
       <td>0.0029</td>
@@ -276,6 +284,7 @@
       <td>Ex-situ dismantling (building)</td>
       <td>30</td>
       <td><span style="color: #ffe234;" class="data-rating-dot"><b>&bull;</b></span>30</td>
+      <td>-</td>
       <td>7.58</td>
       <td>0.144</td>
       <td>98.7</td>
@@ -288,9 +297,9 @@
       <td><span style="color: #ff4545;" class="data-rating-dot"><b>&bull;</b></span>Decoupe et assemblage leporello / wood glue and screws</td>
       <td><span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>50 km, <span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>Camion 16-32 t</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>2 km, <span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>Camion 3.5-7.5 t</td>
-      <td>0</td>
       <td>0.0000</td>
       <td>0.0004</td>
+      <td>0</td>
       <td>0</td>
       <td>0.0012</td>
       <td>0.0002</td>
@@ -308,6 +317,7 @@
       <td>Ex-situ dismantling (building)</td>
       <td>10</td>
       <td><span style="color: #ffe234;" class="data-rating-dot"><b>&bull;</b></span>60</td>
+      <td>1</td>
       <td>0</td>
       <td>0</td>
       <td>250</td>
@@ -320,8 +330,8 @@
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>No modification</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>No intermediate transport</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>10 km, <span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>Camion 16-32 t</td>
-      <td>0</td>
       <td>0.0001</td>
+      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -340,6 +350,7 @@
       <td>Ex-situ dismantling (building)</td>
       <td>98</td>
       <td><span style="color: #ffe234;" class="data-rating-dot"><b>&bull;</b></span>30</td>
+      <td>-</td>
       <td>102</td>
       <td>0.510</td>
       <td>344</td>
@@ -352,10 +363,10 @@
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>Reuse-LCA: Huilage naturel boiserie</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>14 km, <span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>Camion 16-32 t</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>2 km, <span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>Véhicule de transport, jusqu'à 3.5 t</td>
-      <td>0.0021</td>
       <td>0.0004</td>
       <td>0.0014</td>
       <td>0.021</td>
+      <td>0.0021</td>
       <td>0.0014</td>
       <td>0.0017</td>
       <td>0.028</td>
@@ -372,6 +383,7 @@
       <td>Ex-situ construction surplus</td>
       <td>2</td>
       <td><span style="color: #ffe234;" class="data-rating-dot"><b>&bull;</b></span>30</td>
+      <td>-</td>
       <td>20.0</td>
       <td>0.100</td>
       <td>360</td>
@@ -384,10 +396,10 @@
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>No modification</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>100 km, <span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>Camion 16-32 t</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>2 km, <span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>Camion 16-32 t</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
       <td>0.106</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
       <td>0.018</td>
       <td>0.0002</td>
       <td>0.124</td>
@@ -404,6 +416,7 @@
       <td>Ex-situ dismantling (building)</td>
       <td>0</td>
       <td><span style="color: #ffe234;" class="data-rating-dot"><b>&bull;</b></span>60</td>
+      <td>1</td>
       <td>10.8</td>
       <td>0.270</td>
       <td>185</td>
@@ -416,10 +429,10 @@
       <td><span style="color: #ff4545;" class="data-rating-dot"><b>&bull;</b></span>Manufacturing from in-situ losses of reused MDF panels</td>
       <td><span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>50 km, <span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>Camion 16-32 t</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>5 km, <span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>Camion 16-32 t</td>
-      <td>0.0028</td>
       <td>0</td>
       <td>0.0008</td>
       <td>0</td>
+      <td>0.0028</td>
       <td>0.0026</td>
       <td>0.0002</td>
       <td>0.0064</td>
@@ -436,6 +449,7 @@
       <td>Ex-situ dismantling (building)</td>
       <td>19</td>
       <td><span style="color: #ffe234;" class="data-rating-dot"><b>&bull;</b></span>30</td>
+      <td>-</td>
       <td>30.5</td>
       <td>0</td>
       <td>405</td>
@@ -448,9 +462,9 @@
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>No modification</td>
       <td><span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>50 km, <span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>Camion 16-32 t</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>5 km, <span style="color: #ffa534;" class="data-rating-dot"><b>&bull;</b></span>Camion 16-32 t</td>
-      <td>0</td>
       <td>0.0001</td>
       <td>0.0009</td>
+      <td>0</td>
       <td>0</td>
       <td>0.0051</td>
       <td>0.0005</td>
@@ -468,6 +482,7 @@
       <td>Ex-situ dismantling (other)</td>
       <td>60</td>
       <td><span style="color: #ffe234;" class="data-rating-dot"><b>&bull;</b></span>40</td>
+      <td>-</td>
       <td>0</td>
       <td>0.0068</td>
       <td>53.3</td>
@@ -480,10 +495,10 @@
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>Reuse-LCA: Préparation et assemblage structure acier - Faraday</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>60 km, <span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>Camion 7.5-16 t</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>5 km, <span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>Camion 7.5-16 t</td>
-      <td>0.0001</td>
       <td>0.0005</td>
       <td>0</td>
       <td>0.013</td>
+      <td>0.0001</td>
       <td>0.0011</td>
       <td>0.0001</td>
       <td>0.015</td>
@@ -500,6 +515,7 @@
       <td>Ex-situ dismantling (other)</td>
       <td>60</td>
       <td><span style="color: #ffe234;" class="data-rating-dot"><b>&bull;</b></span>40</td>
+      <td>-</td>
       <td>0</td>
       <td>2.65</td>
       <td>20800</td>
@@ -512,10 +528,10 @@
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>Reuse-LCA: Préparation et assemblage structure acier - Faraday</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>60 km, <span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>Camion 7.5-16 t</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>5 km, <span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>Camion 7.5-16 t</td>
-      <td>0.572</td>
       <td>0.739</td>
       <td>0</td>
       <td>5.00</td>
+      <td>0.572</td>
       <td>1.54</td>
       <td>0.033</td>
       <td>7.88</td>
@@ -532,6 +548,7 @@
       <td>Ex-situ dismantling (building)</td>
       <td>20</td>
       <td><span style="color: #ffe234;" class="data-rating-dot"><b>&bull;</b></span>30</td>
+      <td>6</td>
       <td>0</td>
       <td>0.480</td>
       <td>252</td>
@@ -544,9 +561,9 @@
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>No modification</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>3 km, <span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>Véhicule de transport, jusqu'à 3.5 t</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>5 km, <span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>Véhicule de transport, jusqu'à 3.5 t</td>
-      <td>0</td>
       <td>0.0000</td>
       <td>0.0011</td>
+      <td>0</td>
       <td>0</td>
       <td>0.0023</td>
       <td>0.0031</td>
@@ -564,6 +581,7 @@
       <td>Ex-situ dismantling (building)</td>
       <td>20</td>
       <td><span style="color: #ffe234;" class="data-rating-dot"><b>&bull;</b></span>30</td>
+      <td>2</td>
       <td>0</td>
       <td>0.160</td>
       <td>84.0</td>
@@ -576,9 +594,9 @@
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>No modification</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>3 km, <span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>Véhicule de transport, jusqu'à 3.5 t</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>5 km, <span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>Véhicule de transport, jusqu'à 3.5 t</td>
-      <td>0</td>
       <td>0.0000</td>
       <td>0.0003</td>
+      <td>0</td>
       <td>0</td>
       <td>0.0008</td>
       <td>0.0010</td>
@@ -596,6 +614,7 @@
       <td>Ex-situ dismantling (building)</td>
       <td>5</td>
       <td><span style="color: #ffe234;" class="data-rating-dot"><b>&bull;</b></span>30</td>
+      <td>4</td>
       <td>1.00</td>
       <td>0</td>
       <td>10.0</td>
@@ -608,8 +627,8 @@
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>No modification</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>No intermediate transport</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>10 km, <span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>Véhicule de transport, jusqu'à 3.5 t</td>
-      <td>0</td>
       <td>0.0000</td>
+      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -628,6 +647,7 @@
       <td>Ex-situ dismantling (building)</td>
       <td>7</td>
       <td><span style="color: #ffe234;" class="data-rating-dot"><b>&bull;</b></span>30</td>
+      <td>2</td>
       <td>0</td>
       <td>0</td>
       <td>60.2</td>
@@ -640,8 +660,8 @@
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>No modification</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>No intermediate transport</td>
       <td><span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>10 km, <span style="color: #57e32c;" class="data-rating-dot"><b>&bull;</b></span>Véhicule de transport, jusqu'à 3.5 t</td>
-      <td>0</td>
       <td>0.0000</td>
+      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
