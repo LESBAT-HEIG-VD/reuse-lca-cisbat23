@@ -82,14 +82,9 @@
                   <p style="text-align:center;"><img src=https://raw.githubusercontent.com/LESBAT-HEIG-VD/reuse-lca-cisbat23/main/pictures/faraday-map.png alt="Reuse map" width=800px></p>
               </div>
               <div>
-<!--                  <select id="select_reuse_table" class="custom-select" onchange="loadSelectHtml('select_reuse_table','reuse_table')">-->
-<!--                      <option value='\html_tables\\Faraday_cisbat_gwp_total.html'>Total (kg CO2-eq.)</option>-->
-<!--                      <option value='\html_tables\\Faraday_cisbat_gwp_per_kg.html'>per kg of reused product (kg CO2-eq./kg)</option>-->
-<!--                      <option value='\html_tables\\Faraday_cisbat_gwp_per_sqm.html'>per sqm-ERA of building (kg CO2-eq./sqm)</option>-->
-<!--                  </select>-->
-                  <button id="button_reuse_table_tot" onclick="loadHtml('\html_tables\\Faraday_cisbat_gwp_total.html', 'reuse_table'); setActiveButtons('button_reuse_table_tot','#button_reuse_table_tot, #button_reuse_table_kg, #button_reuse_table_sqm')">Total (kg CO2-eq.)</button>
-                  <button id="button_reuse_table_kg" onclick="loadHtml('\html_tables\\Faraday_cisbat_gwp_per_kg.html', 'reuse_table'); setActiveButtons('button_reuse_table_kg','#button_reuse_table_tot, #button_reuse_table_kg, #button_reuse_table_sqm')">per kg of reused product (kg CO2-eq./kg)</button>
-                  <button id="button_reuse_table_sqm" onclick="loadHtml('\html_tables\\Faraday_cisbat_gwp_per_sqm.html', 'reuse_table'); setActiveButtons('button_reuse_table_sqm','#button_reuse_table_tot, #button_reuse_table_kg, #button_reuse_table_sqm')">per sqm of building ERA (kg CO2-eq./sqm)</button>
+                  <button id="button_reuse_table_tot" onclick="loadHtml('Faraday_cisbat_gwp_total.html', 'reuse_table'); setActiveButtons('button_reuse_table_tot','#button_reuse_table_tot, #button_reuse_table_kg, #button_reuse_table_sqm')">Total (kg CO2-eq.)</button>
+                  <button id="button_reuse_table_kg" onclick="loadHtml('Faraday_cisbat_gwp_per_kg.html', 'reuse_table'); setActiveButtons('button_reuse_table_kg','#button_reuse_table_tot, #button_reuse_table_kg, #button_reuse_table_sqm')">per kg of reused product (kg CO2-eq./kg)</button>
+                  <button id="button_reuse_table_sqm" onclick="loadHtml('Faraday_cisbat_gwp_per_sqm.html', 'reuse_table'); setActiveButtons('button_reuse_table_sqm','#button_reuse_table_tot, #button_reuse_table_kg, #button_reuse_table_sqm')">per sqm of building ERA (kg CO2-eq./sqm)</button>
                   <button id="button_info_reusetable" class="info-button" onclick="showModal('reusetableDialog')">&#8505; Table Instructions</button>
                   <button id="button_info_rating" class="info-button" onclick="showModal('ratingDialog')">&#8505; Data rating system <span style="color: #57e32c;" class="data-rating-dot">&bull;</span><span style="color: #b7dd29;" class="data-rating-dot">&bull;</b></span><span style="color: #ffe234;" class="data-rating-dot">&bull;</b></span><span style="color: #ffa534;" class="data-rating-dot">&bull;</b></span><span style="color: #ff4545;" class="data-rating-dot">&bull;</b></span></button>
                   <p><br><span style="color: #ff4545;">&#x26A0;</span> Changing the visibility of the columns can <u>mess the table display</u>. &#x1F527;<b>To re-arrange the columns, double-click on the "n°" column's title.</b></p>
@@ -206,9 +201,7 @@
       function loadHtml(url, id) {
         document.getElementById(id).src = url;
       }
-      function loadSelectHtml(select_id, iframe_id) {
-        document.getElementById(iframe_id).src = document.getElementById(select_id).value;
-      }
+
       function setActiveButtons(buttonId, selector) {
         // Remove the "active" class from all buttons
         var buttons = document.querySelectorAll(selector);
@@ -234,7 +227,7 @@
         setActiveButtons('button_mat_component', '#button_mat_component, #button_mat_ebkp');
         loadHtml('\html_figures\\Faraday_GWP__reused_comp_bar.html', 'bar_comparison');
         setActiveButtons('button_comparison_gwp', '#button_comparison_gwp, #button_comparison_ubp, #button_comparison_penr')
-        loadHtml('\html_tables\\Faraday_cisbat_gwp_total.html', 'reuse_table');
+        loadHtml('Faraday_cisbat_gwp_total.html', 'reuse_table');
         setActiveButtons('button_reuse_table_tot','#button_reuse_table_tot, #button_reuse_table_kg, #button_reuse_table_sqm')
       }
 
